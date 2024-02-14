@@ -7,15 +7,24 @@ const navbar = () => {
       <div className="">
         <Link
           href="/"
-          className="text-sm bg-black rounded-md p-1 font-semibold"
+          className="text-sm bg-black rounded-md p-1 font-semibold flex items-center justify-center"
         >
           <span className="text-white mr-1">Anni</span>
-          <span className="w-12 h-8 rounded bg-white text-black">.dev</span>
+          <span className="w-12 h-8 rounded bg-white text-black flex items-center justify-center">
+            .dev
+          </span>
         </Link>
       </div>
 
       {/* RESPONSIVE MENU */}
-      <div className="">2</div>
+      <div className="">
+        {/* MENU BUTTON */}
+        <button className="w-10 h-8 flex flex-col justify-between">
+          <div className="w-10 h-1 bg-black rounded"></div>
+          <div className="w-10 h-1 bg-black rounded"></div>
+          <div className="w-10 h-1 bg-black rounded"></div>
+        </button>
+      </div>
     </div>
   );
 };
