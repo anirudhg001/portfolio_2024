@@ -18,7 +18,7 @@ const Homepage = () => {
           portfolio showcases the diversity in my projects that reflect my
           commitment to excellence.
         </p>
-        <div>
+        <div className="flex gap-4">
           <button>View My Work</button>
           <button>Contact Me</button>
         </div>
