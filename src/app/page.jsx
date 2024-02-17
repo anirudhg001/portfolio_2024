@@ -9,7 +9,7 @@ const Homepage = () => {
       </div>
       {/* TEXT CONTAINER */}
       <div className="h-1/2 flex flex-col items-center justify-center gap-8">
-        <h1 className="text-4xl font-bold">Crafting Digital Experiences</h1>
+        <h1 className="text-4xl font-bold">Creative Web Developer</h1>
         <p>
           Welcome to my digital canvas, where innovation and creativity
           converge. With a keen eye for aesthetics and enthusiasm for code, my
