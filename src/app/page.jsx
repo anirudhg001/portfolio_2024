@@ -2,13 +2,13 @@ import Image from "next/image";
 
 const Homepage = () => {
   return (
-    <div className="h-full flex flex-col mt-0 lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
+    <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
       {/* IMAGE CONTAINER  */}
       <div className="h-1/2 lg:h-full lg:w-1/2 relative">
-        <Image src="/hero1.png" alt="" fill className="object-contain" />
+        <Image src="/hero.png" alt="" fill className="object-contain" />
       </div>
       {/* TEXT CONTAINER */}
-      <div className="h-1/2 flex flex-col items-center justify-center gap-6 lg:h-full lg:w-1/2">
+      <div className="h-1/2 flex flex-col items-center justify-center gap-8 lg:h-full lg:w-1/2">
         <h1 className="text-4xl md:text-6xl font-bold">
           Creative Web Developer
         </h1>
@@ -18,7 +18,7 @@ const Homepage = () => {
           portfolio showcases the diversity in my projects that reflect my
           commitment to excellence.
         </p>
-        <div className="flex gap-4">
+        <div className="w-full flex gap-4">
           <button className="p-4 ring-1 ring-black rounded-lg bg-black text-white">
             View My Work
           </button>
