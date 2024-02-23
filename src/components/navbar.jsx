@@ -3,9 +3,38 @@ import Link from "next/link";
 import { useState } from "react";
 import Image from "next/image";
 import NavLink from "./navLink";
+import { motion } from "framer-motion";
 
 const navbar = () => {
   const [open, setOpen] = useState(false);
+
+  const topVariants = {
+    closed: {
+      rotate: 0,
+    },
+    opened: {
+      rotate: 45,
+      backgroundColor: "rgb(255,255,255)",
+    },
+  };
+  const centerVariants = {
+    closed: {
+      opacity: 1,
+    },
+    opened: {
+      opacity: 0,
+    },
+  };
+
+  const bottomVariants = {
+    closed: {
+      rotate: 0,
+    },
+    opened: {
+      rotate: -45,
+      backgroundColor: "rgb(255,255,255)",
+    },
+  };
 
   const links = [
     { url: "/", title: "Home" },
@@ -51,9 +80,21 @@ const navbar = () => {
           className="relative w-10 h-8 flex flex-col justify-between z-50"
           onClick={() => setOpen(!open)}
         >
-          <div className="w-10 h-1 bg-white rounded"></div>
-          <div className="w-10 h-1 bg-white rounded"></div>
-          <div className="w-10 h-1 bg-white rounded"></div>
+          <motion.div
+            variants={topVariants}
+            animate={}
+            className="w-10 h-1 bg-black rounded"
+          ></motion.div>
+          <motion.div
+            variants={centerVariants}
+            animate={}
+            className="w-10 h-1 bg-black rounded"
+          ></motion.div>
+          <motion.div
+            variants={bottomVariants}
+            animate={}
+            className="w-10 h-1 bg-black rounded"
+          ></motion.div>
         </button>
 
         {/* MENU LIST  */}
