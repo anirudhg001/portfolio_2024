@@ -16,7 +16,7 @@ const Homepage = () => {
           Welcome to my digital canvas, where innovation and creativity
           converge. With a keen eye for aesthetics and enthusiasm for code, my
           portfolio showcases the diversity in my projects that reflect my
-          commitment to excellence.
+          passion to work on new ideeas.
         </p>
         <div className="w-full flex gap-4">
           <button className="p-4 ring-1 ring-black rounded-lg bg-black text-white">
