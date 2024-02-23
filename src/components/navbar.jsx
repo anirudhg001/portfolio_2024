@@ -82,17 +82,14 @@ const navbar = () => {
         >
           <motion.div
             variants={topVariants}
-            animate={}
             className="w-10 h-1 bg-black rounded"
           ></motion.div>
           <motion.div
             variants={centerVariants}
-            animate={}
             className="w-10 h-1 bg-black rounded"
           ></motion.div>
           <motion.div
             variants={bottomVariants}
-            animate={}
             className="w-10 h-1 bg-black rounded"
           ></motion.div>
         </button>
