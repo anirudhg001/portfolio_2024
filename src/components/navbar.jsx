@@ -49,6 +49,9 @@ const navbar = () => {
     },
     opened: {
       x: "0",
+      transition: {
+        staggerChildren: 0.2,
+      },
     },
   };
 
