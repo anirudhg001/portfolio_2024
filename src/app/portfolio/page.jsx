@@ -1,7 +1,17 @@
-import React from "react";
+"use client";
+import { motion } from "framer-motion";
 
 function PortfolioPage() {
-  return <div>PortfolioPage</div>;
+  return (
+    <motion.div
+      className="h-full"
+      initial={{ y: "-200vh" }}
+      animate={{ y: "0%" }}
+      transition={{ duration: 1 }}
+    >
+      POrtfolio
+    </motion.div>
+  );
 }
 
 export default PortfolioPage;
