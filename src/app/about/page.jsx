@@ -16,20 +16,20 @@ function AboutPage() {
           {/* BIOGRAPHY CONTAINER */}
           <div className="flex flex-col gap-12 justify-center">
             {/* BIOGRAPHY TITLE */}
-            <h1>BIOGRAPHY</h1>
+            <h1 className="font-bold text-2xl">BIOGRAPHY</h1>
             {/* BIOGRAPHY DESC */}
-            <p>
+            <p className="text-lg">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
               maiores cumque quae assumenda praesentium ducimus, maxime quos
               iusto modi accusantium, exercitationem facilis perspiciatis, quia
               sapiente luptatem error assumenda beatae nulla
             </p>
             {/* BIOGRAPHY QUOTE */}
-            <span>
+            <span className="italic">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </span>
             {/* BIOGRAPHY SIGN */}
-            <div className="">
+            <div className="self-end">
               <svg
                 width="185"
                 height="77"
