@@ -10,7 +10,7 @@ function AboutPage() {
       transition={{ duration: 1 }}
     >
       {/* CONTAINER */}
-      <div className="">
+      <div className=" h-full overflow-scroll">
         {/* TEXT CONTAINER */}
         <div className="p-4 sm:p-8 md:p-12 lg:p-20 xl:p-48 flex flex-col gap-24 md:gap-32 lg:gap-48 xl:gap-64">
           {/* BIOGRAPHY CONTAINER */}
@@ -124,7 +124,47 @@ function AboutPage() {
           </motion.svg>
         </div>
         {/* EXPERIENCE CONTAINER */}
-        <div>Experience</div>
+        <div className="flex flex-col gap-12 justify-center">
+          {/* EXPERIENCE TITLE */}
+          <h1 className="font-bold text-2xl">EXPERIENCE</h1>
+          {/* EXPERIENCE LIST */}
+          <div className="">
+            {/* EXPERIENCE LIST ITEM */}
+            <div className="flex justify-between h-48 ">
+              {/* LEFT */}
+              <div className="w-1/3">
+                {/* JOB TITLE */}
+                <div className="bg-white p-3 rounded-b-lg rounded-s-lg">
+                  Technology Analyst Intern
+                </div>
+                {/* JOB DESC */}
+                <div className="p-3 text-sm italic">
+                  Worked on the frontend , backend and designing of the website.
+                  Developed and deployed two fully funtional blog websites.
+                </div>
+                {/* JOB DATE */}
+                <div className="text-red-400 text-sm font-semibold">
+                  July,23 - Jan,24
+                </div>
+                {/* COMPANY */}
+                <div className="p-1 rounded bg-white text-sm font-semibold">
+                  DefineRight Pvt. Ltd.
+                </div>
+              </div>
+              {/* CENTER */}
+              <div className="w-1/6">
+                {/* LINE */}
+                <div>
+                  {/* LINE CIRCLE */}
+                  <div></div>
+                </div>
+              </div>
+
+              {/* RIGHT */}
+              <div className="w-1/3 "></div>
+            </div>
+          </div>
+        </div>
       </div>
       {/* SVG CONTAINER */}
       <div className="hidden"></div>
